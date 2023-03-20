@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --clr-Dark-Blue: hsl(240, 38%, 20%);
+  --clr-Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/pattern-curve.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* global css */
+img {
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+main {
+  width: 95%;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.right-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 15rem;
+  height: 15rem;
+}
+
+.button-container {
+  display: flex;
+
+  align-items: center;
+  gap: 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: white;
+
+  border: 2px solid var(--clr-Grayish-Blue);
+}
+.btn {
+  padding: 5px;
+  font-size: 1rem;
+  border: none;
+  background-color: aliceblue;
+  color: var(--clr-Dark-Blue);
+  cursor: pointer;
+}
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  color: var(--clr-Dark-Blue);
+}
+p {
+  color: var(--clr-Dark-Blue);
+}
+span {
+  color: var(--clr-Grayish-Blue);
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--clr-Grayish-Blue);
+  }
+  .right-container {
+    background-image: url(../images/pattern-bg.svg);
+    background-position: bottom;
+    background-repeat: repeat;
+  }
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+
+    padding: 1.5rem;
+  }
+  .name {
+    display: flex;
+    align-items: flex-start;
+  }
+}
